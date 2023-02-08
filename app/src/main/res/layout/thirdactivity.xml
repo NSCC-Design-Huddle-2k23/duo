@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFECB3"
+    android:backgroundTint="#FFECB3">
 
     <TextView
         android:id="@+id/textView3"
@@ -13,7 +15,9 @@
         android:layout_marginTop="164dp"
         android:layout_marginEnd="288dp"
         android:layout_marginBottom="548dp"
-        android:text="FirstName"
+        android:text="@string/firstname"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#090808"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,12 +32,15 @@
         android:layout_marginEnd="46dp"
         android:layout_marginBottom="532dp"
         android:ems="10"
+        android:hint="@string/name2"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView5"
@@ -43,7 +50,9 @@
         android:layout_marginTop="54dp"
         android:layout_marginEnd="294dp"
         android:layout_marginBottom="474dp"
-        android:text="LastName"
+        android:text="@string/lastname"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#0E0D0D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,21 +67,26 @@
         android:layout_marginEnd="46dp"
         android:layout_marginBottom="459dp"
         android:ems="10"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="61dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="54dp"
         android:layout_marginBottom="400dp"
-        android:text="Mail Id"
+        android:text="@string/mail_id"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#0C0B0B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -86,11 +100,15 @@
         android:layout_marginEnd="46dp"
         android:layout_marginBottom="382dp"
         android:ems="10"
+        android:hint="@string/enter_email"
+        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView8"
@@ -100,7 +118,8 @@
         android:layout_marginTop="54dp"
         android:layout_marginEnd="328dp"
         android:layout_marginBottom="326dp"
-        android:text="DOB"
+        android:text="@string/dob"
+        android:textColor="#050505"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -115,11 +134,16 @@
         android:layout_marginEnd="49dp"
         android:layout_marginBottom="308dp"
         android:ems="10"
+        android:hint="@string/select_dob"
+        android:importantForAutofill="no"
         android:inputType="date"
+        android:minHeight="48dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress3"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView9"
@@ -129,7 +153,9 @@
         android:layout_marginTop="54dp"
         android:layout_marginEnd="305dp"
         android:layout_marginBottom="246dp"
-        android:text="Address"
+        android:text="@string/address"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#0E0D0D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,11 +170,15 @@
         android:layout_marginEnd="49dp"
         android:layout_marginBottom="232dp"
         android:ems="10"
+        android:hint="@string/enter_address"
+        android:importantForAutofill="no"
         android:inputType="textPostalAddress"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView10"
@@ -158,7 +188,9 @@
         android:layout_marginTop="59dp"
         android:layout_marginEnd="302dp"
         android:layout_marginBottom="171dp"
-        android:text="Phone No"
+        android:text="@string/phone_no"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#0B0A0A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -173,11 +205,15 @@
         android:layout_marginEnd="49dp"
         android:layout_marginBottom="158dp"
         android:ems="10"
+        android:hint="@string/enter_phone_number"
+        android:importantForAutofill="no"
         android:inputType="phone"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/button3"
@@ -187,19 +223,32 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="70dp"
-        android:text="Sign-Up"
-        android:onClick="callsecondActivity"
+        android:background="#FFEB3B"
+        android:fontFamily="@font/abeezee"
+        android:text="@string/sign_up"
+        android:textColor="#FFECB3"
+        app:iconTint="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+        app:rippleColor="#FFEB3B"
+        app:strokeColor="#FFEB3B"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter the details"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="85dp" />
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="251dp"
+        android:text="@string/enter_the_details"
+        android:textColor="#0E0D0D"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,20 +25,16 @@ public class Activity3 extends AppCompatActivity {
         ed4 = (EditText)findViewById(R.id.editTextDate);
         ed5 = (EditText)findViewById(R.id.editTextTextPostalAddress);
         ed6 = (EditText)findViewById(R.id.editTextPhone);
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        Intent i  = getIntent();
+        b1.setOnClickListener(v -> {
 
-                if (TextUtils.isEmpty(ed1.getText().toString()) && TextUtils.isEmpty(ed2.getText().toString()) && TextUtils.isEmpty(ed3.getText().toString())
-                        && TextUtils.isEmpty(ed4.getText().toString()) && TextUtils.isEmpty(ed5.getText().toString()) && TextUtils.isEmpty(ed6.getText().toString())){
-                    Toast.makeText(Activity3.this, "Empty field not allowed!", Toast.LENGTH_SHORT).show();
-                }else {
-                    public void callSecondActivity (View v){
-                        Intent i = new Intent(getApplicationContext(), Activity2.class);
-                        startActivity(i);
-                    }
-                }
+            if (TextUtils.isEmpty(ed1.getText().toString()) && TextUtils.isEmpty(ed2.getText().toString()) && TextUtils.isEmpty(ed3.getText().toString())
+                    && TextUtils.isEmpty(ed4.getText().toString()) && TextUtils.isEmpty(ed5.getText().toString()) && TextUtils.isEmpty(ed6.getText().toString())){
+                Toast.makeText(Activity3.this, "Empty field not allowed!", Toast.LENGTH_SHORT).show();
+            }else {
+                    Intent k = new Intent(Activity3.this, Activity2.class);
+                    startActivity(k);
             }
-            });
+        });
 
     }}

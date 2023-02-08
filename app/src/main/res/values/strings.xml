@@ -2,5 +2,46 @@
     <string name="app_name">Quizotic</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_password">Enter password</string>
+    <string name="username_email">Username/Email</string>
+    <string name="sign_in">Sign-In</string>
+    <string name="subway_surf">subway surf</string>
+    <string name="candy_crush">candy crush</string>
+    <string name="sudoku">sudoku</string>
+    <string name="submit">Submit</string>
+    <string name="level1">Level1</string>
+    <string name="which_was_the_first_game_developed_in_android">Which was the first game developed in android?</string>
+    <string name="snake_game">snake game</string>
+    <string name="list_of_quiz">List of quiz</string>
+    <string name="enjoy_and_learn">Enjoy and learn!</string>
+    <string name="instructions">Instructions</string>
+    <string name="select_the_type_of_quiz_which_you_would_like_to_play">* Select the type of quiz which you would like to play</string>
+    <string name="follow_the_instructionsgiven_in_the_quiz_and_try_to_give_the_correct_answer">* Follow the instructionsgiven in the quiz and try to give the correct answer</string>
+    <string name="todo">TODO</string>
+    <string name="firstname">FirstName</string>
+    <string name="lastname">LastName</string>
+    <string name="name">Name</string>
+    <string name="enter_the_details">Enter the details</string>
+    <string name="select_dob">Select DOB</string>
+    <string name="enter_phone_number">Enter Phone number</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="name2">Name</string>
+    <string name="mail_id">Mail Id</string>
+    <string name="enter_email">Enter email</string>
+    <string name="sign_up">Sign-Up</string>
+    <string name="dob">DOB</string>
+    <string name="phone_no">Phone No</string>
+    <string name="address">Address</string>
+    <string name="password">Password</string>
+    <string name="todo2">TODO</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="if_you_don_t_have_an_account_sign_up">If you don\'t have an account? Sign-Up</string>
+    <string name="password2">Password</string>
+    <string name="username">username</string>
+    <string name="password3">password</string>
+    <string name="user_name">User name</string>
+    <string name="sign_up2">Sign-Up</string>
+    <string name="sign_in2">Sign-In</string>
+    <string name="todo4">TODO</string>
 
 </resources>

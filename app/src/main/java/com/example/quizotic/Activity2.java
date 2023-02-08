@@ -19,24 +19,18 @@ public class Activity2 extends AppCompatActivity {
         b1 = (Button)findViewById(R.id.button);
         ed1 = (EditText)findViewById(R.id.editTextTextEmailAddress);
         ed2 = (EditText)findViewById(R.id.editTextTextPassword);
-
+        Intent k= getIntent();
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
-
-                public void callfourthActivity(View v){
-                if(ed1.getText().toString().equals("srec") ||
-                        ed2.getText().toString().equals("admin")) {
-
-                    public void callfourthActivity(View v){
-                        Intent i = new Intent(getApplicationContext(), Activity4.class);
-                        startActivity(i);
-
-                    }}
-                else{
+            public void onClick(View v) {
+                if(ed1.getText().toString().equals("srec") || ed2.getText().toString().equals("admin")) {
+                    Intent l = new Intent(Activity2.this, Activity4.class);
+                    startActivity(l);
+                }else{
                     Toast.makeText(getApplicationContext(), "Wrong Credentials",Toast.LENGTH_SHORT).show();
-
                 }
+
             }
         });
         }
-    }
+}

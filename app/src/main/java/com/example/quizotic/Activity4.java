@@ -25,55 +25,37 @@ public class Activity4 extends AppCompatActivity implements BottomNavigationView
         img4 =(ImageButton)findViewById(R.id.imageButton5);
         img5 =(ImageButton)findViewById(R.id.imageButton8);
         img6 =(ImageButton)findViewById(R.id.imageButton);
+        Intent i = getIntent();
+        Intent l = getIntent();
+        img1.setOnClickListener(v -> {
+                Intent m = new Intent(Activity4.this, Activity5.class);
+                startActivity(m);
 
-        img1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                public void callfifthActivity (View v){
-                    Intent i = new Intent(getApplicationContext(), Activity5.class);
-                    startActivity(i);
-                }
-            }
         });
-        img2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                public void callfifthActivity(View v){
-                Intent i = new Intent(getApplicationContext(), Activity5.class)  ;
-                startActivity(i);
-            } }
+        img2.setOnClickListener(v -> {
+            Intent m = new Intent(Activity4.this, Activity5.class)  ;
+            startActivity(m);
         });
-        img3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                public void callfifthActivity(View v){
-               Intent i = new Intent(getApplicationContext(), Activity5.class);
-               startActivity(i);
-            }            }
+
+        img3.setOnClickListener(v -> {
+            Intent m = new Intent(Activity4.this, Activity5.class);
+            startActivity(m);
         });
-        img4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                public void callfifthActivity(View v ){
-                Intent i = new Intent(getApplicationContext(), Activity5.class);
-                 startActivity(i);    }
-            }
+
+        img4.setOnClickListener(v -> {
+            Intent m = new Intent(Activity4.this, Activity5.class);
+            startActivity(m);
         });
-        img5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                public void callfifthActivity(View v ){
-                Intent i=new Intent(getApplicationContext(),Activity5.class);
-                 startActivity(i);           }
-            }
+
+        img5.setOnClickListener(v -> {
+            Intent m = new Intent(Activity4.this, Activity5.class);
+            startActivity(m);
         });
-        img6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                public void callfifthActivity(View v ){
-                Intent i=new Intent(getApplicationContext(),Activity5.class);
-                 startActivity(i);      }
-            }
+
+        img6.setOnClickListener(v -> {
+
+            Intent i1 =new Intent(Activity4.this,Activity5.class);
+             startActivity(i1);
         });
         setContentView(R.layout.fourthactivity);
 

@@ -1,5 +1,6 @@
 package com.example.quizotic;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +25,7 @@ public class Activity5 extends AppCompatActivity {
         c3=(CheckBox)findViewById(R.id.checkBox3);
         c4=(CheckBox)findViewById(R.id.checkBox3);
         submit=(Button)findViewById(R.id.button4);
+        Intent m= getIntent();
         submit.setOnClickListener(new View.OnClickListener(){
 
             @Override
